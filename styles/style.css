@@ -1,0 +1,96 @@
+/* NAVBAR */
+.header {
+  
+}
+
+.navbar {
+  flex-wrap: nowrap;
+  background-color: #f72210;
+  height: 50px;
+  padding: unset;
+}
+
+.navbar-brand {
+
+}
+
+.navbar-brand img {
+  margin: 0 0 4px 15px;
+  width: 132px;
+  filter: invert();
+}
+
+.nav-right {
+
+}
+
+.profile {
+  width: 30px;
+  margin-right: 5px;
+}
+
+.btn-warning {
+  padding: 0.1rem .3rem;
+  background-color: #ffe400;
+  font-size: .7rem;
+  font-weight: 900;
+}
+
+.navbar-toggler {
+  margin-right: 3px;
+}
+
+.navbar-toggler-icon {
+  width: 22px;
+}
+
+/* MAIN CONTENT */
+
+/* TOP STORY */
+.main {
+  background-color: #f4f5f7;
+  padding-top: 20px;
+}
+
+.container-fluid {
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-story {
+  background-color: white;
+}
+
+.col h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: bold;
+  color: rgba(3,3,3,.4);
+  margin: 18px 0 10px;
+}
+
+.card {
+  border: 0;
+}
+
+.card-body {
+  padding: 10px 0 20px;
+}
+
+.card-title {
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.card-text {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* FEATURED STORIES */
+.featured-stories {
+  margin-top: 20px;
+  background-color: white;
+}
