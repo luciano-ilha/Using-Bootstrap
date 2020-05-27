@@ -1,16 +1,35 @@
 /* STANDARD CLASSES */
+.font-rbt {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 .gray-title {
   text-transform: uppercase;
-  font-size: .9375rem;
+  font-size: 1rem;
   line-height: 1rem;
-  font-weight: bold;
   color: rgba(3,3,3,.4);
   margin: 1.2rem 0 .6875rem;
 }
 
 .no-decor {
-  color: black;
   text-decoration: none !important;
+}
+
+.black {
+  color: #000;
+}
+
+.gray-hover:hover {
+  color: rgba(3,3,3,.4);
+}
+
+.pink-hover:hover {
+  color: #f92859;
+}
+
+.under-red-hover:hover {
+  color: #000;
+  text-decoration: underline #f72210 !important ;
 }
 
 /* NAVBAR */
@@ -75,7 +94,6 @@
   padding: .5rem .9375rem .5625rem;
   z-index: 1;
   font-size: .9375rem;
-  font-weight: 700;
   line-height: 15px;
   position: absolute;
   left: 0;
@@ -87,8 +105,8 @@
 }
 
 .card-title {
-  font-size: 1.1875rem;
-  font-weight: 800;
+  font-size: 1.375rem;
+  line-height: 1.5rem;
 }
 
 .card-text {
@@ -103,7 +121,8 @@
 }
 
 /* THE DEBATE */
-.debate {
+.debate,
+.opinion {
   padding-top: 1.25rem;
   background-color: #f4f5f7;
 }
@@ -112,6 +131,7 @@
   display: flex;
   flex-direction: column;
   background-color: white;
+  padding-bottom: 1.8rem;
 }
 
 .debate-first {
@@ -121,32 +141,31 @@
   padding-bottom: .25rem;
 }
 
+.opinion-box,
 .debate-first-box {
   display: flex;
   align-items: center;
 }
-
+.opinion-box img,
 .debate-sec-box img,
 .debate-first-box img {
   width: 3.9375rem;
 }
 
-.debate-first-box img {
-  margin-right: .9375rem;
+.opinion-info-box,
+.debate-info-box {
+  margin-left: .9375rem;
 }
 
-.debate-info {
-  font-weight: 600;
+.opinion-info a,
+.debate-info a {
+  font-size: 1.0625rem;
 }
 
+.opinion-author,
 .debate-author {
-  font-size: .75rem;
-  font-weight: 800;
+  font-size: .875rem;
   text-transform: uppercase;
-}
-
-.debate-author span {
-  font-weight: normal;
 }
 
 .versus {
@@ -155,11 +174,11 @@
 }
 
 .versus::before {
-  top: calc(50% - 2px);
+  top: calc(50% - .125rem);
   content: "";
   display: block;
   background-color: #d9d9d9;
-  height: 1px;
+  height: .0625rem;
   position: absolute;
   left: 0;
   right: 0;
@@ -168,14 +187,15 @@
 .vs-icon {
   position: relative;
   z-index: 1;
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   background-color: #000;
   color: #d6d6d6;
   border-radius: 50%;
-  font: bold 14px/32px "Roboto Condensed",sans-serif;
   text-align: center;
-  margin: 6px auto;
+  font-size: .9rem;
+  line-height: 2.1rem;
+  margin: .375rem auto;
 }
 
 .versus::after {
@@ -183,7 +203,7 @@
   content: "";
   display: block;
   background-color: #d9d9d9;
-  height: 1px;
+  height: .0625rem;
   position: absolute;
   left: 0;
   right: 0;
@@ -199,4 +219,31 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.debate-sec-box div:first-child {
+  margin-left: 0;
+}
+
+/* OPINION SECTION */
+
+.opinion-row {
+  background-color: white;
+  padding-bottom: 1.875rem;
+}
+
+.opinion-box {
+  display: flex;
+  padding-top: .8375rem;
+  margin-bottom: .9rem;
+  border-top: .0625rem solid rgb(195, 195, 195, .6);
+}
+
+.opinion-col div:nth-child(2) {
+  border-top: 0;
+  padding-top: unset;
+}
+
+.opinion-author {
+  color: #555555;
 }
