@@ -1,6 +1,35 @@
 /* STANDARD CLASSES */
-.font-rbt {
+.font-rbt{
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+.font-arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-22 {
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+}
+
+.font-20 {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}
+
+.font-17 {
+  font-size: 1.0625rem;
+  line-height: 1.25rem;
+}
+
+.font-14 {
+  font-size: .875rem;
+  line-height: 1.25rem;
+}
+
+.font-13 {
+  font-size: .8125rem;
+  line-height: 1.125rem;
 }
 
 .black {
@@ -87,7 +116,6 @@
   background-color: rgba(255,255,255,.9);
   padding: .5rem .9375rem .5625rem;
   z-index: 1;
-  font-size: .9375rem;
   line-height: 15px;
   position: absolute;
   left: 0;
@@ -99,12 +127,10 @@
 }
 
 .card-title {
-  font-size: 1.375rem;
   line-height: 1.5rem;
 }
 
 .card-text {
-  font-size: .8125rem;
   line-height: 1.125rem;
 }
 
@@ -115,6 +141,7 @@
 }
 
 /* THE DEBATE */
+.more-stories,
 .midia-cards,
 .debate,
 .opinion {
@@ -145,14 +172,8 @@
   margin-left: .9375rem;
 }
 
-.opinion-info a,
-.debate-info a {
-  font-size: 1.0625rem;
-}
-
 .opinion-author,
 .debate-author {
-  font-size: .875rem;
   text-transform: uppercase;
 }
 
@@ -206,6 +227,7 @@
 }
 
 /* OPINION SECTION */
+.more-stories-row,
 .midia-cards-row,
 .opinion-row {
   background-color: white;
@@ -236,16 +258,21 @@
   padding: 1.1rem;
 }
 
-.my-card-title {
-  font-size: 1.25rem;
-}
-
-.midia-img-box a div {
-  font-size: 1.0625rem;
-}
-
 .midia-card {
   margin-bottom: 1.8rem;
 }
 
+/* MORE STORIES */
+.more-stories-content {
+  padding: .875rem 0;
+  border-top: .0625rem solid #ddd;
+}
 
+.more-stories-img-box {
+  width: 5.9375rem;
+  margin-right: .9375rem;
+}
+
+.more-stories-texts a {
+  margin-bottom: .7rem;
+}
