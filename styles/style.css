@@ -97,12 +97,12 @@
 /* MAIN CONTENT */
 
 /* TOP STORY */
-.main {
+.top-story  {
   margin-top: 3rem;
   background-color: #f4f5f7;
 }
 
-.top-story {
+.top-story-col {
   background-color: white;
 }
 
@@ -116,7 +116,7 @@
   background-color: rgba(255,255,255,.9);
   padding: .5rem .9375rem .5625rem;
   z-index: 1;
-  line-height: 15px;
+  line-height: .9375rem;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -141,6 +141,7 @@
 }
 
 /* THE DEBATE */
+.pandemic-hero,
 .more-stories,
 .midia-cards,
 .debate,
@@ -170,11 +171,6 @@
 .opinion-info-box,
 .debate-info-box {
   margin-left: .9375rem;
-}
-
-.opinion-author,
-.debate-author {
-  text-transform: uppercase;
 }
 
 .versus {
@@ -227,6 +223,7 @@
 }
 
 /* OPINION SECTION */
+.pandemic-row,
 .more-stories-row,
 .midia-cards-row,
 .opinion-row {
@@ -275,4 +272,39 @@
 
 .more-stories-texts a {
   margin-bottom: .7rem;
+}
+
+/* PANDEMIC HEROES */
+.pandemic-col h3:nth-child(3) {
+  margin-top: 0;
+}
+
+.pdmic-image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.pdmic-tags {
+  left: 0;
+  bottom: 0;
+}
+
+.pdmic-tags a {
+  font-size: .8125rem;
+  line-height: 1.25rem;
+  color: #333;
+  background-color: #C2D4D7;
+  padding-left: .375rem;
+  padding-right: .375rem;
+}
+
+.pdmic-info {
+  padding: .9375rem 0 1.25rem;
+}
+
+.pdmic-info a h3 {
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: rgb(3, 3, 3, .5);
 }
