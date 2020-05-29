@@ -36,6 +36,10 @@
   color: #000;
 }
 
+.full-w {
+  width: 100%;
+}
+
 .gray-title {
   text-transform: uppercase;
   font-size: 1rem;
@@ -141,6 +145,7 @@
 }
 
 /* THE DEBATE */
+.magazine,
 .pandemic-hero,
 .more-stories,
 .midia-cards,
@@ -223,6 +228,7 @@
 }
 
 /* OPINION SECTION */
+.magazine-row,
 .pandemic-row,
 .more-stories-row,
 .midia-cards-row,
@@ -275,6 +281,10 @@
 }
 
 /* PANDEMIC HEROES */
+.pandemic-col div:nth-child(11) {
+  margin-bottom: 0;
+}
+
 .pandemic-col h3:nth-child(3) {
   margin-top: 0;
 }
@@ -282,7 +292,6 @@
 .pdmic-image {
   position: relative;
   overflow: hidden;
-  width: 100%;
 }
 
 .pdmic-tags {
@@ -325,22 +334,26 @@
   background-color: #f4f5f6;
 }
 
+.magazine-title,
 .sign-up-title {
   font-size: 1.1875rem;
   line-height: 1.1875rem;
   margin-bottom: .9375rem;
 }
 
+.magazine-icon,
 .sign-up-icon {
-  width: 3rem;
-  height: 2rem;
   margin-right: .625rem;
   background: url("/assets/newsweek-favicon.ico") center/contain no-repeat #f72210;
 }
 
+.sign-up-icon {
+  width: 3rem;
+  height: 2rem;
+}
+
 .sign-up-email-text,
 .sign-up-email-submit {
-  width: 100%;
   height: 2rem;
 }
 
@@ -361,4 +374,61 @@
   background-color: #f72210;
   border: 0;
   border-radius: .2rem;
+}
+
+/* MAGAZINE */
+.magazine-row {
+  padding-top: 1.3rem;
+}
+
+.magazine-icon {
+  width: 1.9375rem;
+  height: 1.8125rem;
+}
+
+.mgz1-feature {
+  font-size: 1.125rem;
+  background-color: #f4f5f6;
+  text-align: center;
+  margin-bottom: 0;
+  padding: .625rem .625rem .625rem .75rem;
+}
+
+.mgz1-feature::after {
+    content: "";
+    display: inline-block;
+    width: .5rem;
+    height: .875rem;
+    margin-left: .625rem;
+    background: url(https://g.newsweek.com/www/images/icon-arrow-right.svg) center/contain no-repeat;
+    filter: invert(100%);
+}
+
+.mgz1-feature:hover {
+  color: #000;
+  background-color: #DBDCDD;
+}
+
+.cat a,
+.mgz2-category {
+  font: bold 1rem/1.625rem;
+  color: #f72210;
+  margin-top: .625rem;
+  margin-bottom: .625rem;
+}
+
+.main-cat {
+  padding: .1rem .4375rem;
+  background-color: #f72210;
+  color: white;
+  margin-right: .4375rem;
+}
+
+.mgz2-title {
+  margin-bottom: 1.875rem;
+}
+
+.mgz2-title {
+  font-size: 1rem;
+  line-height: 1rem;
 }
