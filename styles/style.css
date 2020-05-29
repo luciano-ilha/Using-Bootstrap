@@ -145,6 +145,7 @@
 }
 
 /* THE DEBATE */
+.editors,
 .magazine,
 .pandemic-hero,
 .more-stories,
@@ -228,6 +229,7 @@
 }
 
 /* OPINION SECTION */
+.editors-row,
 .magazine-row,
 .pandemic-row,
 .more-stories-row,
@@ -253,6 +255,7 @@
 }
 
 /* MIDIA CARDS SECTION */
+.editors-row,
 .midia-cards-row {
   padding-top: 1.25rem;
 }
@@ -334,6 +337,7 @@
   background-color: #f4f5f6;
 }
 
+.editors-title,
 .magazine-title,
 .sign-up-title {
   font-size: 1.1875rem;
@@ -341,6 +345,7 @@
   margin-bottom: .9375rem;
 }
 
+.editors-icon,
 .magazine-icon,
 .sign-up-icon {
   margin-right: .625rem;
@@ -381,6 +386,7 @@
   padding-top: 1.3rem;
 }
 
+.editors-icon,
 .magazine-icon {
   width: 1.9375rem;
   height: 1.8125rem;
@@ -431,4 +437,10 @@
 .mgz2-title {
   font-size: 1rem;
   line-height: 1rem;
+}
+
+/* EDITORS PICK */
+.editors-title {
+  border-bottom: .0625rem solid #d9d9d9;
+  padding-bottom: .75rem;
 }
