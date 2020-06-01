@@ -81,6 +81,11 @@
 }
 
 /* NAVBAR */
+.header {
+  margin: 0;
+  padding: 0;
+}
+
 .navbar {
   background-color: #f72210;
   height: 3.125rem;
@@ -160,6 +165,8 @@
 }
 
 /* THE DEBATE */
+.subscribe-row2,
+.subscribe,
 .editors,
 .magazine,
 .pandemic-hero,
@@ -169,11 +176,6 @@
 .opinion {
   padding-top: 1.25rem;
   background-color: #f4f5f7;
-}
-
-.debate-box {
-  background-color: white;
-  padding-bottom: 1.8rem;
 }
 
 .debate-first {
@@ -244,13 +246,16 @@
 }
 
 /* OPINION SECTION */
+.subscribe-col-int2,
+.subscribe-row,
 .b-news-row,
 .editors-row,
 .magazine-row,
 .pandemic-row,
 .more-stories-row,
 .midia-cards-row,
-.opinion-row {
+.opinion-row,
+.debate-box {
   background-color: white;
   padding-bottom: 1.875rem;
 }
@@ -271,6 +276,8 @@
 }
 
 /* MIDIA CARDS SECTION */
+.subscribe-col-int2,
+.subscribe-row,
 .editors-row,
 .midia-cards-row {
   padding-top: 1.25rem;
@@ -501,4 +508,120 @@
 .b-news-feature-box ul li:nth-child(3) {
   border-top: .0625rem solid  #ddd;
   padding-top: .625rem;
+}
+
+/* SUBSCRIBE */
+.subscribe-col1 {
+  margin-bottom: 1.25rem;
+}
+
+.subscribe-title {
+  padding-bottom: .6875rem;
+}
+
+.subscribe-col1-int {
+  text-align: center;
+  background-color: #f4f5f6;
+  padding: 1.5rem 1.25rem 7rem;
+  height: max-content;
+}
+
+.subscribe-img-box {
+  padding-right: 5.625rem;
+  padding-bottom: .8125rem;
+  margin-bottom: .9375rem;
+  height: 10rem;
+}
+
+.subscribe-info {
+  position: relative;
+  top: 5rem;
+}
+
+.subscribe-signup-info p,
+.subscribe-info p {
+  font: 300 15px/21px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin-bottom: 1.25rem;
+}
+
+.subscribe-img-front,
+.subscribe-img-back {
+  width: 10.625rem;
+  height: 13.75rem;
+}
+
+.subscribe-img-back img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+.subscribe-img-front {
+  top: .8125rem;
+  left: 5rem;
+}
+
+.subscribe-button {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+  cursor: pointer;
+  background-color: #f72310;
+  color: white;
+  padding: .1rem 0 .625rem .75rem;
+  border: 0;
+  border-radius: .1875rem;
+}
+
+.subscribe-button::after {
+  width: 1.4rem;
+  height: 1.4em;
+  content: "";
+  display: inline-block;
+  margin-left: .5625rem;
+  background: url(/assets/right-arrow-black-icon.png) center / contain no-repeat;
+  position: relative;
+  top: .4rem;
+  right: .4rem;
+  filter: invert(100%);
+}
+
+.subscribe-signup {
+  margin: 0;
+  padding: 0;
+  text-align: center
+}
+
+.subscribe-signup-info {
+  border: .0625rem solid #ebebeb;
+  padding: 1.25rem;
+}
+
+.subscribe-signup-info h3 {
+  font-size: 1.25rem;
+}
+
+.subscribe-form-submit,
+.subscribe-form-text {
+  width: 100%;
+  height: 2.375rem;
+  line-height: 2.375rem;
+}
+
+.subscribe-form-text {
+  color: #555;
+  font-size: .875rem;
+  font-family: "Helvetica", sans-serif;
+  background-color: white;
+  border: .0625rem solid #e0e1e1;
+  text-indent: .5625rem;
+}
+
+.subscribe-form-submit {
+  margin-top: .6875rem;
+  color: white;
+  cursor: pointer;
+  border: 0;
+  border-radius: .1875rem;
+  background-color: #f61602;
 }
