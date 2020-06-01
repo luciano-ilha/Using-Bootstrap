@@ -1,3 +1,5 @@
+
+
 /* STANDARD CLASSES */
 .font-rbt{
   font-family: 'Roboto Condensed', sans-serif;
@@ -15,6 +17,11 @@
 .font-20 {
   font-size: 1.25rem;
   line-height: 1.25rem;
+}
+
+.font-18 {
+  font-size: 1.125rem;
+  line-height: 1.125rem;
 }
 
 .font-17 {
@@ -60,9 +67,17 @@
   color: #f92859;
 }
 
+.red-hover:hover {
+  color:#f72210;
+}
+
 .under-red-hover:hover {
   color: #000;
   text-decoration: underline #f72210 !important ;
+}
+
+.nodec-list {
+  list-style: none;
 }
 
 /* NAVBAR */
@@ -229,6 +244,7 @@
 }
 
 /* OPINION SECTION */
+.b-news-row,
 .editors-row,
 .magazine-row,
 .pandemic-row,
@@ -440,7 +456,49 @@
 }
 
 /* EDITORS PICK */
+.editors-row {
+  padding-bottom: 1.3rem;
+}
+
 .editors-title {
   border-bottom: .0625rem solid #d9d9d9;
   padding-bottom: .75rem;
+}
+
+/* BOTTOM NEWS */
+.b-news-title {
+  font-weight: 700;
+  border-top: .0625rem solid #d9d9d9;
+  color: #f72210;
+  padding-top: 1.5625rem;
+  padding-bottom: .6875rem;
+}
+
+.b-news-image-title {
+  margin-top: .625rem;
+  margin-bottom: 1.5625rem;
+}
+
+.b-news-feature-box {
+  margin-bottom: 1.875rem;
+}
+
+.b-news-feature-img {
+  width: 5.9375rem;
+  margin-right: .9375rem;
+}
+
+.b-news-feature-box ul {
+  margin: 0;
+  padding: 0;
+}
+
+.b-news-feature-box ul li {
+  padding-bottom: .625rem;
+}
+
+.b-news-feature-box ul li:nth-child(2),
+.b-news-feature-box ul li:nth-child(3) {
+  border-top: .0625rem solid  #ddd;
+  padding-top: .625rem;
 }
