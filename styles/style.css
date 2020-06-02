@@ -125,6 +125,7 @@
 .top-story  {
   margin-top: 3rem;
   background-color: #f4f5f7;
+  width: auto;
 }
 
 .top-story-col {
@@ -758,4 +759,12 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
   padding-right: 1.25rem;
   margin: .375rem 0;
   cursor: pointer;
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (min-width: 768px) {
+  .featured-stories {
+    margin-top: 0;
+  }
 }
