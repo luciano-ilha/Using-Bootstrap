@@ -1,6 +1,14 @@
 
 
 /* STANDARD CLASSES */
+.gray-gap {
+  margin: 0;
+  padding: 0;
+  height: 1.3rem;
+  background-color: #f4f5f7;
+  width: 48rem;
+}
+
 .font-rbt{
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -122,13 +130,12 @@
 /* MAIN CONTENT */
 
 /* TOP STORY */
-.top-story  {
-  margin-top: 3rem;
-  background-color: #f4f5f7;
+.top-story {
   width: auto;
 }
 
 .top-story-col {
+  padding-top: 3rem;
   background-color: white;
 }
 
@@ -162,25 +169,10 @@
 
 /* FEATURED STORIES */
 .featured-stories {
-  margin-top: 1.25rem;
   background-color: white;
 }
 
 /* THE DEBATE */
-.footer,
-.subscribe-row2,
-.subscribe,
-.editors,
-.magazine,
-.pandemic-hero,
-.more-stories,
-.midia-cards,
-.debate,
-.opinion {
-  padding-top: 1.25rem;
-  background-color: #f4f5f7;
-}
-
 .debate-first {
   border-top: .25rem solid #f92859;
   margin: 0 .9375rem;
@@ -518,6 +510,10 @@
   padding-bottom: 0 !important;
 }
 
+.subscribe-row2 {
+  margin: 0 .1rem;
+}
+
 .subscribe-col1 {
   margin-bottom: 1.25rem;
 }
@@ -765,6 +761,46 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
 
 @media screen and (min-width: 768px) {
   .featured-stories {
-    margin-top: 0;
+    margin-top: 3rem;
   }
+
+  .top-story-col {
+    height: min-content;
+  }
+
+  .pandemic-hero {
+    padding: 0;
+  }
+
+  .midia-cards-row,
+  .pandemic-row {
+    padding-bottom: 0;
+  }
+
+  .pdmic-items {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fit,1fr);
+    grid-gap: 1rem;
+  }
+
+  .pdmic-item {
+    padding: 0;
+    margin: 0;
+  }
+
+  .more-stories {
+    padding: 0;
+  }
+
+  .midia-cards-row col {
+    display: flex;
+    justify-content: center;
+  }
+
+  .midia-cards {
+    width: 24rem;
+  }
+
 }
