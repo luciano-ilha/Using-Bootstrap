@@ -731,6 +731,7 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
   color: #666;
 }
 
+.bottom-footer-links,
 .footer-links-edition{
  padding: 0;
 }
@@ -740,6 +741,7 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
   margin-right: .9375rem;
 }
 
+.footer-links-menu li,
 .footer-editions-menu li {
   display: inline-block;
   padding-right: 1.25rem;
@@ -747,6 +749,13 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
   cursor: pointer;
 }
 
+.footer-links-menu li a,
 .footer-editions-menu li a {
   color: #666; 
+}
+
+.menu-items {
+  padding-right: 1.25rem;
+  margin: .375rem 0;
+  cursor: pointer;
 }
