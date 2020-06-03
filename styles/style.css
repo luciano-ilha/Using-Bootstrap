@@ -1,4 +1,8 @@
-
+body {
+  max-width: 1310px;
+  margin: 0 auto;
+  background-color: #F4F5F6;
+}
 
 /* STANDARD CLASSES */
 .gray-gap {
@@ -526,7 +530,6 @@
   text-align: center;
   background-color: #f4f5f6;
   padding: 1.5rem 1.25rem 7rem;
-  height: max-content;
 }
 
 .subscribe-col-int2 {
@@ -768,6 +771,7 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
 
 /* MEDIA QUERYS */
 
+/* Min Width: 768px */
 @media screen and (min-width: 768px) {
   .sponsored-md,
   .featured-stories {
@@ -920,4 +924,94 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
     align-items: flex-end;
   }
 
+}
+
+/* Min Wid: 992px */
+
+@media screen and (min-width: 992px) {
+  .debate {
+    margin-top: 3rem;
+    padding: 0;
+  }
+  
+  .debate-box {
+    padding-bottom: .5rem;
+  }
+
+  .opinion {
+    padding-left: 0;
+  }
+
+  .opinion-row {
+    padding-bottom: .7rem;
+  }
+
+  .sponsored-colmn-lg {
+    padding: 0;
+  }
+
+  .midia-cards-col {
+    padding-left: .1rem;
+    padding-right: .1rem;
+  }
+
+  .more-stories {
+    display: sticky;
+    top: 0;
+  }
+
+  .editors-col {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .subscribe-lg-box {
+    display: flex;
+    border-bottom: .0625rem solid #d9d9d9;
+    width: 100%;
+    padding-bottom: 1.4rem;
+  }
+
+  .subscribe-row2 {
+    width: 48%;
+  }
+
+  .subscribe-col1-int {
+    padding-bottom: 1.8rem;
+    height: 22.25rem;
+  }
+
+  .subscribe-info,
+  .subscribe-img-box {
+    position: relative;
+    top: 2rem;
+  }
+
+  .subscribe-signup-info,
+  .subscribe-signup {
+    height: 22.25rem;
+  }
+
+  .subscribe-lg-img {
+    background: url(/assets/subscribe3.png) center center / cover no-repeat;
+    width: 40rem;
+    max-width: 191px;
+  }
+
+  .subscribe-row2,
+  .subscribe {
+    padding-top: 1rem;
+  }
+
+  .subscribe-lg-box::after {
+    content: "";
+    border-top: .0625rem solid #d9d9d9;
+    width: 100%;
+    position: absolute;
+  }
+
+  .subscribe-info {
+    margin-top: 0;
+  }
 }
