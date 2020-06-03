@@ -636,7 +636,9 @@
 
 /* FOOTER */
 .footer-row {
-  padding: 1.9rem .9375rem;
+  display: flex;
+  flex-direction: column !important;
+  padding: 1.9rem .9375rem 0;
 }
 
 .footer-logo {
@@ -719,12 +721,19 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
   width: 1.2rem;
 }
 
+.footer-links-row {
+  padding-right: 0;
+  margin-right: 0;
+  box-sizing: content-box;
+}
+
 .footer-links {
   flex-wrap: wrap;
   border-top: .0625rem solid #d9d9d9;
   padding-top: .375rem;
-  font-size: .875rem;
-  line-height: .9375rem;
+  width: 100%;
+  font-size: .8rem;
+  line-height: .6875rem;
   color: #666;
 }
 
@@ -760,16 +769,13 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
 /* MEDIA QUERYS */
 
 @media screen and (min-width: 768px) {
+  .sponsored-md,
   .featured-stories {
     margin-top: 3rem;
   }
 
   .top-story-col {
     height: min-content;
-  }
-
-  .pandemic-hero {
-    padding: 0;
   }
 
   .midia-cards-row,
@@ -790,9 +796,12 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
     margin: 0;
   }
 
+  .subscribe-signup-info,
+  .pandemic-hero,
   .more-stories {
     padding: 0;
   }
+
 
   .midia-cards-row col {
     display: flex;
@@ -801,6 +810,114 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
 
   .midia-cards {
     width: 24rem;
+  }
+
+  .sponsored-colmn-md,
+  .sponsored-md {
+    padding-right: 0;
+  }
+
+  .sponsored-colmn-md {
+    width: 24rem;
+  }
+
+  .magazine-title {
+    border-bottom: .0625rem solid #d9d9d9;
+    padding-bottom: .5rem;
+  }
+
+  .mgz-int-row-bottom,
+  .mgz-int {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 1.8rem;
+  }
+
+  .mgz1 {
+    grid-column: 1 / 2;
+  }
+
+  .mgz2 {
+    grid-column: 2 / -1;
+  }
+
+  .editors-col,
+  .mgz2-row {
+    grid-gap: 1.8rem;
+  }
+
+  .b-news-int-row,
+  .mgz2-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .mgz-int-row-bottom article h5,
+  .mgz2-row article h5 {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+
+  .editors-row {
+    padding-top: 0;
+  }
+
+  .editors-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+  }
+
+  .card div h4 a{
+    font-size: 1.5rem;
+  }
+
+  .card div p {
+    font-size: .9rem;
+    line-height: 1.2rem;
+  }
+
+  .subscribe-signup-info,
+  .subscribe-col1-int {
+    display: flex;
+  }
+
+  .subscribe-info {
+    position: static;
+    text-align: left;
+    margin-left: 1.8rem;
+    margin-top: 4.5rem;
+    margin-right: .5rem;
+  }
+
+  .subscribe-signup-info-right h3,
+  .subscribe-info h3 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .subscribe-signup img {
+    max-width: 15rem;
+  }
+
+  .subscribe-signup-info-right {
+    text-align: left;
+    margin: 2rem 1.8rem 1.8rem;
+    width: 100%;
+  }
+
+  .footer-logo-box {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .footer-row {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 
 }
