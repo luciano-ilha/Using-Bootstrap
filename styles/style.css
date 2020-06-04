@@ -782,7 +782,7 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
 
 @media screen and (min-width: 768px) {
   .sponsored-md,
-  .featured-stories {
+  .featured-stories-md-lg {
     margin-top: 3rem;
   }
 
@@ -864,6 +864,7 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
+    grid-gap: 1.8rem;
   }
 
   .mgz-int-row-bottom article h5,
@@ -889,6 +890,11 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
   .card div p {
     font-size: .9rem;
     line-height: 1.2rem;
+  }
+
+  .subscribe {
+    border-top: .0625rem solid #d9d9d9;
+    padding-top: 1rem;
   }
 
   .subscribe-signup-info,
@@ -918,6 +924,11 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
     text-align: left;
     margin: 2rem 1.8rem 1.8rem;
     width: 100%;
+  }
+
+  .subscribe-row2 {
+    border-bottom: .0625rem solid #d9d9d9;
+    padding-bottom: 1rem;
   }
 
   .footer-logo-box {
