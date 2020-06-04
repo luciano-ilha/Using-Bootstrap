@@ -1,12 +1,17 @@
+.container-fluid,
+.container {
+  padding: 0;
+}
 
-
+.row {
+  margin: 0;
+}
 /* STANDARD CLASSES */
 .gray-gap {
   margin: 0;
   padding: 0;
   height: 1.3rem;
   background-color: #f4f5f7;
-  width: 48rem;
 }
 
 .font-rbt{
@@ -130,9 +135,6 @@
 /* MAIN CONTENT */
 
 /* TOP STORY */
-.top-story {
-  width: auto;
-}
 
 .top-story-col {
   padding-top: 3rem;
@@ -169,7 +171,7 @@
 
 /* FEATURED STORIES */
 .featured-stories {
-  background-color: white;
+  /* background-color: white; */
 }
 
 /* THE DEBATE */
@@ -278,6 +280,10 @@
   padding-top: 1.25rem;
 }
 
+.midia-cards-row {
+  padding-bottom: 0;
+}
+
 .midia-card-body {
   padding: 1.1rem;
 }
@@ -290,6 +296,10 @@
 .more-stories-content {
   padding: .875rem 0;
   border-top: .0625rem solid #ddd;
+}
+
+.more-stories-row {
+  padding-bottom: .5rem;
 }
 
 .more-stories-img-box {
@@ -511,7 +521,7 @@
 }
 
 .subscribe-row2 {
-  margin: 0 .1rem;
+  margin-left: .1rem;
 }
 
 .subscribe-col1 {
@@ -635,6 +645,10 @@
 }
 
 /* FOOTER */
+.footer {
+  margin-bottom: 1rem;
+}
+
 .footer-row {
   display: flex;
   flex-direction: column !important;
@@ -722,9 +736,7 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
 }
 
 .footer-links-row {
-  padding-right: 0;
-  margin-right: 0;
-  box-sizing: content-box;
+  padding: 0 .9375rem;
 }
 
 .footer-links {

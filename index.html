@@ -14,8 +14,8 @@
 <body>
 
   <!-- Nav-bar -->
-  <header class="header fixed-top container-fluid">
-    <nav class="navbar navbar-dark flex-nowrap text-nowrap">
+  <header class="header container-fluid fixed-top row">
+    <nav class="navbar navbar-dark flex-nowrap text-nowrap col">
       <!-- Brand -->
       <a class="navbar-brand" href="#"><img src="/assets/newsweek-logo.svg" alt=""></a>
       <!-- Right Buttons -->
@@ -36,7 +36,7 @@
 
   <!-- Cards Content -->
   <section class="top-story row container-fluid">
-    <div class="col-sm-12 col-md-6 order-md-1 top-story-col">
+    <div class="col col-md-7 order-md-1 top-story-col">
       <h3 class="gray-title font-rbt">TOP STORY</h3>
       <div class="card">
         <div class="img-box position-relative">
@@ -49,7 +49,7 @@
           <h4 class="card-title"><a href="#" class="font-rbt font-22 text-dark under-red-hover">100 Seconds of Silence to Commemorate 100,000 Dead</a></h4>
           <p class="card-text font-arial font-13">The coronavirus pandemic has now cost 100,000 American lives. To mark the heartbreaking milestone, Newsweek's newsroom will fall silent for 100 seconds. We invite you to join us.</p>
         </div>
-        <section class="pandemic-hero container-fluid d-sm-none d-md-block">
+        <section class="pandemic-hero container-fluid d-none d-md-block">
           <div class="pandemic-row row">
             <div class="pandemic-col col">
               <h3 class="gray-title font-rbt"><a href="#" class="text-decoration-none gray-title font-rbt gray-hover">HEROES OF THE PANDEMIC</a></h3>
@@ -139,7 +139,7 @@
             </div>
           </div>
         </section>
-        <section class="more-stories container-fluid d-sm-none d-md-block">
+        <section class="more-stories container-fluid d-none d-md-block">
           <div class="more-stories-row row">
             <div class="more-stories-col col">
               <h3 class="gray-title font-rbt">MORE STORIES</h3>
@@ -302,7 +302,10 @@
         </section>
       </div>
     </div>
-    <div class="col-md-6 d-md-none d-md-block featured-stories">
+
+    <!-- FETURED STORIES INSIDE MD VIEW -->
+
+    <div class="col-md-5 d-none d-md-block featured-stories-md-lg">
       <h3 class="gray-title font-rbt">FEATURED STORIES</h3>
       <div class="card">
         <div class="img-box position-relative">
@@ -424,8 +427,10 @@
       </section>
     </div>
   </section>
-  <div class="gray-gap d-sm-block d-md-none"></div>
-  <div class="col-sm-12 col-md-6 d-sm-block d-md-none featured-stories">
+
+  <div class="gray-gap d-md-none"></div>
+
+  <div class="col d-sm-block d-md-none featured-stories">
     <h3 class="gray-title font-rbt">FEATURED STORIES</h3>
     <div class="card">
       <div class="img-box position-relative">
@@ -487,7 +492,7 @@
         <p class="card-text font-arial font-13">The Kentucky Republican has said in recent weeks that he is eyeing another stimulus worth around $1 trillion, which is unlikely to include another round of individual checks for Americans.</p>
       </div>
     </div>
-    <section class="midia-cards container-fluid d-sm-none d-md-block">
+    <section class="midia-cards container-fluid d-none d-md-block">
       <div class="midia-cards-row row">
         <div class="col">
           <div class="midia-card card border">
@@ -547,7 +552,7 @@
     </section>
   </div>
 
-  <div class="gray-gap d-sm-block d-md-none"></div>
+  <div class="gray-gap col d-sm-block d-md-none container-fluid"></div>
 
   <!-- THE DEBATE SECTION -->
   <section class="debate container-fluid">
@@ -595,7 +600,7 @@
   <div class="gray-gap d-sm-block d-md-none"></div>
 
   <!-- OPINION SECTION -->
-  <section class="opinion container-fluid>
+  <section class="opinion container-fluid">
     <div class="opinion-row row">
       <div class="col opinion-col">
         <a href="#" class="text-decoration-none"><h3 class="gray-title font-rbt">OPINION</h3></a>
@@ -682,7 +687,7 @@
   </section>
   <div class="gray-gap d-sm-block d-md-none"></div>
   
-  <div class="sponsored-md row container-fluid d-sm-none d-md-flex justify-content-center">
+  <div class="sponsored-md row container-fluid d-none d-md-flex justify-content-center">
     <div class="sponsored-colmn-md col-5">
       <div class="sponsored-box border mt-2">
         <div class="midia-img-box position-relative">
@@ -1414,8 +1419,8 @@
     <div class="b-news-row row">
       <div class="b-news-col col">
         <div class="b-news-title"><a href="#" class="text-decoration-none gray-icon-red red-hover font-rbt font-22">U.S.</a></div>
-        <div class="b-news-int-row row">
-          <div class="col-12 position-relative">
+        <div class="b-news-int-row">
+          <div class="position-relative">
             <article class="d-block">
               <div class="b-news-image">
                 <a href="#" class="text-decoration-none "><img src="assets/bnews1.jpg" alt="news image" class="full-w"></a>
@@ -1425,7 +1430,7 @@
               </h4>
             </article>
           </div>
-          <div class="col-12 position-relative">
+          <div class="position-relative">
             <article class="d-block">
               <div class="b-news-image">
                 <a href="#" class="text-decoration-none "><img src="assets/bnews2.jpg" alt="news image" class="full-w"></a>
@@ -1435,7 +1440,7 @@
               </h4>
             </article>
           </div>
-          <div class="col position-relative">
+          <div class="position-relative">
             <div class="b-news-feature-box font-rbt font-17 black">
               <ul>
                 <li class="nodec-list d-flex">
@@ -1455,8 +1460,8 @@
           </div>
         </div>
         <div class="b-news-title"><a href="#" class="text-decoration-none gray-icon-red red-hover font-rbt font-22">World</a></div>
-        <div class="b-news-int-row row">
-          <div class="col-12 position-relative">
+        <div class="b-news-int-row">
+          <div class="position-relative">
             <article class="d-block">
               <div class="b-news-image">
                 <a href="#" class="text-decoration-none "><img src="assets/bnews-feature4.jpg" alt="news image" class="full-w"></a>
@@ -1466,7 +1471,7 @@
               </h4>
             </article>
           </div>
-          <div class="col-12 position-relative">
+          <div class="position-relative">
             <article class="d-block">
               <div class="b-news-image">
                 <a href="#" class="text-decoration-none "><img src="assets/bnews-feature5.jpg" alt="news image" class="full-w"></a>
@@ -1476,7 +1481,7 @@
               </h4>
             </article>
           </div>
-          <div class="col position-relative">
+          <div class="position-relative">
             <div class="b-news-feature-box font-rbt font-17 black">
               <ul>
                 <li class="nodec-list d-flex">
@@ -1496,8 +1501,8 @@
           </div>
         </div>
         <div class="b-news-title"><a href="#" class="text-decoration-none gray-icon-red red-hover font-rbt font-22">Business</a></div>
-        <div class="b-news-int-row row">
-          <div class="col-12 position-relative">
+        <div class="b-news-int-row">
+          <div class="position-relative">
             <article class="d-block">
               <div class="b-news-image">
                 <a href="#" class="text-decoration-none "><img src="assets/bnews-feature9.jpg" alt="news image" class="full-w"></a>
@@ -1507,7 +1512,7 @@
               </h4>
             </article>
           </div>
-          <div class="col-12 position-relative">
+          <div class="position-relative">
             <article class="d-block">
               <div class="b-news-image">
                 <a href="#" class="text-decoration-none "><img src="assets/bnews-feature10.jpg" alt="news image" class="full-w"></a>
@@ -1517,7 +1522,7 @@
               </h4>
             </article>
           </div>
-          <div class="col position-relative">
+          <div class="position-relative">
             <div class="b-news-feature-box font-rbt font-17 black">
               <ul>
                 <li class="nodec-list d-flex">
@@ -1537,8 +1542,8 @@
           </div>
         </div>
         <div class="b-news-title"><a href="#" class="text-decoration-none gray-icon-red red-hover font-rbt font-22">Tech & Science</a></div>
-        <div class="b-news-int-row row">
-          <div class="col-12 position-relative">
+        <div class="b-news-int-row">
+          <div class="position-relative">
             <article class="d-block">
               <div class="b-news-image">
                 <a href="#" class="text-decoration-none "><img src="assets/bnews-feature14.jpg" alt="news image" class="full-w"></a>
@@ -1548,7 +1553,7 @@
               </h4>
             </article>
           </div>
-          <div class="col-12 position-relative">
+          <div class="position-relative">
             <article class="d-block">
               <div class="b-news-image">
                 <a href="#" class="text-decoration-none "><img src="assets/bnews-feature15.jpg" alt="news image" class="full-w"></a>
@@ -1558,7 +1563,7 @@
               </h4>
             </article>
           </div>
-          <div class="col position-relative">
+          <div class="position-relative">
             <div class="b-news-feature-box font-rbt font-17 black">
               <ul>
                 <li class="nodec-list d-flex">
@@ -1579,8 +1584,8 @@
           </div>
         </div>
         <div class="b-news-title"><a href="#" class="text-decoration-none gray-icon-red red-hover font-rbt font-22">Culture</a></div>
-        <div class="b-news-int-row row">
-          <div class="col-12 position-relative">
+        <div class="b-news-int-row">
+          <div class="position-relative">
             <article class="d-block">
               <div class="b-news-image">
                 <a href="#" class="text-decoration-none "><img src="assets/bnews-feature19.jpg" alt="news image" class="full-w"></a>
@@ -1590,7 +1595,7 @@
               </h4>
             </article>
           </div>
-          <div class="col-12 position-relative">
+          <div class="position-relative">
             <article class="d-block">
               <div class="b-news-image">
                 <a href="#" class="text-decoration-none "><img src="assets/bnews-feature20.jpg" alt="news image" class="full-w"></a>
@@ -1600,7 +1605,7 @@
               </h4>
             </article>
           </div>
-          <div class="col position-relative">
+          <div class="position-relative">
             <div class="b-news-feature-box font-rbt font-17 black">
               <ul>
                 <li class="nodec-list d-flex">
@@ -1620,8 +1625,8 @@
           </div>
         </div>
         <div class="b-news-title"><a href="#" class="text-decoration-none gray-icon-red red-hover font-rbt font-22">Sports</a></div>
-        <div class="b-news-int-row row">
-          <div class="col-12 position-relative">
+        <div class="b-news-int-row">
+          <div class="position-relative">
             <article class="d-block">
               <div class="b-news-image">
                 <a href="#" class="text-decoration-none "><img src="assets/bnews-feature24.jpg" alt="news image" class="full-w"></a>
@@ -1632,7 +1637,7 @@
               </h4>
             </article>
           </div>
-          <div class="col-12 position-relative">
+          <div class="position-relative">
             <article class="d-block">
               <div class="b-news-image">
                 <a href="#" class="text-decoration-none "><img src="assets/bnews-feature25.jpg" alt="news image" class="full-w"></a>
@@ -1642,7 +1647,7 @@
               </h4>
             </article>
           </div>
-          <div class="col position-relative">
+          <div class="position-relative">
             <div class="b-news-feature-box font-rbt font-17 black">
               <ul>
                 <li class="nodec-list d-flex">
@@ -1703,7 +1708,7 @@
       </div>
       <div class="subscribe-signup col">
         <div class="subscribe-signup-info">
-          <img src="/assets/subscribe3.png" alt="subscribe image" class="d-sm-none d-md-block">
+          <img src="/assets/subscribe3.png" alt="subscribe image" class="d-none d-md-block">
           <div class="subscribe-signup-info-right">
             <h3 class="font-rbt black">
               The Starting 5
