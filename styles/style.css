@@ -150,6 +150,127 @@ body {
   width: 1.375rem;
 }
 
+/* 992px NAVBAR */
+.header-lg {
+  z-index: 10;
+}
+
+.header-lg-top {
+  background-color: #f72210;
+  z-index: 2;
+  height: 5.9375rem;
+  padding: 1.25rem .625rem .9375rem;
+  align-items: flex-end;
+}
+
+.top-col2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-login-btn {
+  background-color: #f72210;
+  color: white;
+  display: inline-block;
+}
+
+.top-yellow-btn,
+.top-login-btn {
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  padding-left: .5625rem;
+  padding-right: .5625rem;
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+  cursor: pointer;
+  border: 0;
+  border-radius: .1875rem;
+}
+
+.top-yellow-btn {
+  display: flex;
+  align-items: center;
+  background-color: #ffe400;
+  color: black;
+}
+
+.weather-top {
+  position: absolute;
+  top: .75rem;
+  left: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.weather-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.weather-info {
+  padding-left: .5rem;
+}
+
+.header-lg-middle {
+  background-color: #f72210;
+  transform: translate(-50%,0);
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  padding: .625rem 0;
+}
+
+.header-lg-logo {
+  display: block;
+  fill: white;
+  width: 24.75rem;
+  height: 3.75rem;
+  margin: .625rem auto 0;
+}
+
+.header-lg-bottom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4.125rem;
+  background-color: #f72210;
+  border-left: .75rem solid white;
+  border-top: .8125rem solid #f72210;
+}
+
+.header-lg-bottom {
+  display: block;
+  position: relative;
+  padding-top: .9375rem;
+  padding-bottom: .9375rem;
+  padding-right: 10rem;
+  background-color: white;
+  border-bottom-color: #f4f5f6;
+  border-bottom-width: .125rem;
+  border-bottom-style: solid;
+  z-index: 1;
+}
+
+.header-bottom-list {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  width: 100%;
+  font-size: 1.1875rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+
+.hb-first-item {
+  border-left-width: 0;
+  border-left-color: #d9d9d9;
+  border-left-style: solid;
+  flex-grow: 1;
+  text-align: center;
+}
+
 /* MAIN CONTENT */
 
 /* TOP STORY */
@@ -991,6 +1112,8 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
 
 /* 992px SCREEN */
 @media screen and (min-width: 992px) {
+  
+  
   .right-lg-col{
     padding: 0;
   }
