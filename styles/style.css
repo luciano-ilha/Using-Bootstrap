@@ -1,3 +1,9 @@
+body {
+  max-width: 82.5rem;
+  margin: 0 auto;
+  background-color: #f4f5f7;
+}
+
 .container-fluid,
 .container {
   padding: 0;
@@ -94,6 +100,11 @@
 }
 
 /* NAVBAR */
+.footer {
+  background-color: white;
+  padding-bottom: 1rem;
+}
+
 .footer-row ul,
 .header {
   margin: 0;
@@ -110,6 +121,13 @@
   margin: 0 0 .25rem .9375rem;
   width: 8.25rem;
   filter: invert();
+}
+
+.login-text {
+  font-size: 1.125rem;
+  vertical-align: middle;
+  color: white;
+  margin-right: .8rem;
 }
 
 .profile {
@@ -171,7 +189,8 @@
 
 /* FEATURED STORIES */
 .featured-stories {
-  /* background-color: white; */
+  background-color: white;
+  padding-top: .1rem;
 }
 
 /* THE DEBATE */
@@ -780,10 +799,27 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
 
 /* MEDIA QUERYS */
 
+/* 768px SCREEN */
 @media screen and (min-width: 768px) {
-  .sponsored-md,
+  .btn-warning {
+    padding: 0.1rem .3rem;
+    background-color: #ffe400;
+    font-size: 1rem;
+    font-weight: 900;
+  }
+  
+  .navbar-toggler-icon {
+    width: 2rem;
+  } 
+
   .featured-stories-md-lg {
     margin-top: 3rem;
+    background-color: white;
+  }
+
+  .sponsored-md {
+    padding-top: .7rem;
+    background-color: white;
   }
 
   .top-story-col {
@@ -880,7 +916,7 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
   .editors-col {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(4, 1fr);
   }
 
   .card div h4 a{
@@ -892,9 +928,22 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
     line-height: 1.2rem;
   }
 
-  .subscribe {
+  .subscribe-box {
     border-top: .0625rem solid #d9d9d9;
-    padding-top: 1rem;
+    border-bottom: .0625rem solid #d9d9d9;
+  }
+
+  .subscribe-row {
+    padding-top: 2rem;
+  }
+
+  .subscribe-col1-int {
+    align-items: center;
+  }
+
+  .subscribe-row2 {
+    background-color: white;
+    padding-bottom: 1.8rem;
   }
 
   .subscribe-signup-info,
@@ -926,11 +975,6 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
     width: 100%;
   }
 
-  .subscribe-row2 {
-    border-bottom: .0625rem solid #d9d9d9;
-    padding-bottom: 1rem;
-  }
-
   .footer-logo-box {
     display: flex;
     align-items: flex-end;
@@ -943,4 +987,77 @@ filter: invert(38%) sepia(1%) saturate(915%) hue-rotate(348deg) brightness(97%) 
     align-items: flex-end;
   }
 
+}
+
+/* 992px SCREEN */
+@media screen and (min-width: 992px) {
+  .right-lg-col{
+    padding: 0;
+  }
+
+  .debate-lg {
+    padding-top: 3rem;
+  }
+
+  .sponsored-first-box-lg {
+    margin: 0 .9375rem;
+  }
+
+  .sponsored-box-lg,
+  .sign-up-box-lg {
+    margin: 1.8rem .9375rem;
+  }
+
+  .magazine-row {
+    padding-top: 0;
+  }
+
+  .editors-col {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .subscribe-box {
+    display: flex;
+    align-items: flex-start !important;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    background-color: white;
+  }
+
+  .subscribe-col1-int {
+    padding: 0 1rem 8rem 1rem;
+    height: 19.4rem;
+  }
+
+  .subscribe-info {
+    padding-top: 3rem;
+  }
+
+  .subscribe-img-box {
+    position: relative;
+    top: 2rem;
+  }
+
+  .subscribe-col-int2,
+  .subscribe-row {
+    padding-top: 0;
+  }
+
+  .subscribe-row2 {
+    width: 45%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .right-lg-col {
+    background-color: white;
+  }
+
+  .magazine {
+    padding-top: 1rem;
+    background-color: white;
+  }
+  
 }
