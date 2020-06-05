@@ -1,8 +1,9 @@
 # Using Bootstrap
 
-> This project contains a clone of Newsweek website.
+> This project contains a clone of Newsweek website, was done with HTML, CSS Positioning and Layout (Including Grid and Flexbox), Media Query and Bootstrap, using mobile first approach. After finish mobile first, done 768px view and 992px for better responsiveness.
 
-![Screenshot]()
+
+![Screenshot](assets/using-bootstrap-screenshot.png)
 
 # Built With #
 
@@ -11,7 +12,7 @@
 - Google fonts
  
 # Live Demo #
-[Live Demo Link]()
+[Live Demo Link](https://rawcdn.githack.com/luciano-ilha/Using-Bootstrap/a1f8162d440f5fd2ac69218ad5d1c7ca6ea524ae/index.html)
  
 # Prerequisites #
 All Modern web browsers like:
