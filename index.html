@@ -17,7 +17,7 @@
 
   <!-- Max 768px Navbar -->
   <header class="header container-fluid fixed-top row d-lg-none">
-    <nav class="navbar navbar-dark flex-nowrap text-nowrap col">
+    <nav class="navbar navbar-dark col">
       <!-- Brand -->
       <a class="navbar-brand" href="#"><img src="/assets/newsweek-logo.svg" alt=""></a>
       <!-- Right Buttons -->
@@ -30,7 +30,7 @@
         <!-- Yellow Button -->
         <button type="button" class="btn btn-warning">SUBSCRIBE</button>
         <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <button class="navbar-toggler" type="button">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>  
@@ -39,12 +39,17 @@
 
   <!-- Min 992px Navbar -->
   <header class="header-lg d-none d-lg-block">
-    <div class="container position-relative">
-      <div class="header-lg-top d-flex position-relative justify-content-between">
-        <div class="top-col1 col-6">
+    <div class="container-fluid">
+      <div class="header-lg-top d-flex justify-content-between">
+        <div class="top-col1 font-rbt">
           <span>Thu, Jun 04, 2020</span>
         </div>
-        <div class="top-col2 col-6 align-items-center">
+        <div class="header-lg-middle">
+          <a href="#" class="text-decoration-none">
+            <img src="assets/newsweek-logo.svg" alt="newsweek logo" class="header-lg-logo">
+          </a>
+        </div>
+        <div class="top-col2 d-flex align-items-center">
           <button class="top-login-btn font-rbt text-uppercase">
             Login
           </button>
@@ -52,34 +57,43 @@
             Subscribe
           </button>
         </div>
-        <div class="weather-top font-rbt">
-          <a href="#" class="text-decoration-none font-rbt">
-            <img src="" alt="weather image" class="weather-img">
-            <span class="weather-info">20° Santa Maria, BR</span>
-          </a>
-        </div>
-      </div>
-      <div class="header-lg-middle">
-        <a href="#" class="text-decoration-none">
-          <img src="assets/newsweek-logo.svg" alt="newsweek logo" class="header-lg-logo">
-        </a>
       </div>
       <div class="header-lg-bottom">
         <div class="d-flex justify-content-center">
-          <ul class="header-bottom-list font-rbt">
+          <ul class="header-bottom-list font-rbt nodec-list">
             <li class="hb-first-item">
               <a href="#" class="text-decoration-none black">U.S.</a>
             </li>
-            <li class="hb-item"></li>
-            <li class="hb-item"></li>
-            <li class="hb-item"></li>
-            <li class="hb-item"></li>
-            <li class="hb-item"></li>
-            <li class="hb-item"></li>
-            <li class="hb-item"></li>
-            <li class="hb-item"></li>
-            <li class="hb-item"></li>
-            <li class="hb-last-item"></li>
+            <li class="hb-item">
+              <a href="#" class="text-decoration-none black">World</a>
+            </li>
+            <li class="hb-item">
+              <a href="#" class="text-decoration-none black">Business</a>
+            </li>
+            <li class="hb-item">
+              <a href="#" class="text-decoration-none black">Tech & Science</a>
+            </li>
+            <li class="hb-item">
+              <a href="#" class="text-decoration-none black">Culture</a>
+            </li>
+            <li class="hb-item">
+              <a href="#" class="text-decoration-none black">Newsgeek</a>
+            </li>
+            <li class="hb-item">
+              <a href="#" class="text-decoration-none black">Sports</a>
+            </li>
+            <li class="hb-item">
+              <a href="#" class="text-decoration-none black">Health</a>
+            </li>
+            <li class="hb-item">
+              <a href="#" class="text-decoration-none black">The Debate</a>
+            </li>
+            <li class="hb-item">
+              <a href="#" class="text-decoration-none black">Vantage</a>
+            </li>
+            <li class="hb-item">
+              <a href="#" class="text-decoration-none black">Weather</a>
+            </li>
           </ul>
         </div>
       </div>
