@@ -917,7 +917,7 @@ body {
     font-size: 1rem;
     font-weight: 900;
   }
-  
+
   .navbar-toggler-icon {
     width: 2rem;
   }
@@ -1098,13 +1098,14 @@ body {
 }
 
 /* 992px SCREEN */
-@media screen and (min-width: 992px) {  
+@media screen and (min-width: 992px) {
   .featured-stories-md-lg {
     margin-top: 0;
   }
 
   .right-lg-col {
     padding: 0;
+    background-color: white;
   }
 
   .subscribe-info,
@@ -1159,12 +1160,8 @@ body {
     margin: 0;
   }
 
-  .right-lg-col {
-    background-color: white;
-  }
-
   .magazine {
     padding-top: 1rem;
     background-color: white;
-  } 
+  }
 }
