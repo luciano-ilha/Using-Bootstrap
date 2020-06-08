@@ -214,7 +214,6 @@ body {
 
 .header-lg-bottom::before {
   content: "";
-  display: block;
   position: absolute;
   top: 0;
   right: 0;
@@ -238,7 +237,6 @@ body {
 }
 
 .header-bottom-list {
-  display: flex;
   justify-content: center;
   color: #000;
   width: 100%;
