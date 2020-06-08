@@ -1048,6 +1048,8 @@ body {
 
   .subscribe-col1-int {
     align-items: center;
+    padding: 0 1rem 8rem 1rem;
+    height: 19.4rem;
   }
 
   .subscribe-row2 {
@@ -1068,6 +1070,11 @@ body {
     margin-right: 0.5rem;
   }
 
+  .subscribe-signup-info,
+  .subscribe-signup-info img {
+    max-height: 19.4rem;
+  }
+
   .subscribe-signup-info-right h3,
   .subscribe-info h3 {
     font-size: 1.5rem;
@@ -1080,7 +1087,8 @@ body {
 
   .subscribe-signup-info-right {
     text-align: left;
-    margin: 2rem 1.8rem 1.8rem;
+    /* margin: 2rem 1.8rem 1.8rem; */
+    padding: .2rem 1.8rem;
     width: 100%;
   }
 
@@ -1144,11 +1152,6 @@ body {
     background-color: white;
   }
 
-  .subscribe-col1-int {
-    padding: 0 1rem 8rem 1rem;
-    height: 19.4rem;
-  }
-
   .subscribe-img-box {
     position: relative;
     top: 2rem;
@@ -1159,6 +1162,19 @@ body {
     padding: 0;
     margin: 0;
   }
+
+  .subscribe-signup-info,
+  .subscribe-col-int2 {
+  height: 19.4rem;
+  }
+
+  .subscribe-signup-info-right h3 {
+    font-size: 1.7rem;
+  }
+
+  .subscribe-signup-info-right p {
+    font-size: .8rem;
+  } 
 
   .magazine {
     padding-top: 1rem;
