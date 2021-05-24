@@ -12,7 +12,7 @@
 - Google fonts
  
 # Live Demo #
-[Live Demo Link](https://vigorous-sinoussi-2475e2.netlify.app/)
+[Live Demo Link](https://beesmart-newsclone.netlify.app/)
  
 # Prerequisites #
 All Modern web browsers like:
